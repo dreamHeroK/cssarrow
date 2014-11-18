@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>css无图片模式</title>
+</head>
+
+<body>
+<style>
+.bg-color{display:block; width:10px; height:10px; background:#ccc;}
+.border{display:block; width:0px; height:0px; font-size:0; border:10px solid #6a7237;}
+.border_arrow{display:block; width:0px; height:0px; font-size:0; border-width:10px; border-style:solid; border-color:#6a7237 #fff #fff #fff;}
+.border_arrow2{
+	display:block;
+	width:0px;
+	height:0px;
+	font-size:0;
+	border-width:20px 10px;
+	border-style:solid dashed dashed;
+	border-color:#6a7237 transparent transparent;
+	}
+.arrow_01{
+	position:absolute;
+	z-index:2;
+	left:40px;
+	top:40px;
+	display:block;
+	width:0;
+	height:0;
+	font-size:0;
+	border-width:20px;
+	border-style:solid;
+	border-color:#fff #6a7237 #6a7237 #fff;
+	}
+.arrow_02{
+	
+	position:absolute;
+	z-index:3;
+	left:40px;
+	top:60px;
+	display:block;
+	width:0px;
+	height:0px;
+	font-size:0;
+	border-width:10px 20px;
+	border-style:dashed solid solid dashed;
+	border-color:transparent #fff #fff transparent;
+	}
+</style>
+<div class="bg-color"></div> <!--background正方形图片--></br>
+<div class="border"></div><!--boder正方形图片--></br>
+<div class="border_arrow"></div><!--boder三角形--></br>
+<div class="border_arrow2"></div><!--boder长三角形--></br>
+<div class="border_arrow3">
+     <span class="arrow_01"></span>
+     <span class="arrow_02"></span>
+</div><!--boder斜三角形--></br>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.inskong{
+	    position: absolute;
+	    left: 15px;
+	    top: 20px;
+	    width: 22px;
+	    height: 22px;
+	    border-radius: 100%;
+	    border: 2px solid #ccc;
+	}
+	.act .inskong{
+	    border: 2px solid #3C6;
+	}
+	.act .inskong:after{
+	    content: " ";
+	    position: absolute;
+	    right: -1px;
+	    top: 3px;
+	    z-index: 8;
+	    width: 15px;
+	    height: 6px;
+	    background: #ffffff;
+	    border-left: 2px solid #3C6;
+	    border-bottom: 2px solid #3C6;
+	    -webkit-transform: rotate(-45deg);
+	    transform: rotate(-45deg);  
+	}
+	</style>
+</head>
+<body>
+<div class="act">
+	<div class="inskong">
+		</div>
+	</div>
+</body>
+</html>
